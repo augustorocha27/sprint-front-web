@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mantém o footer no final da página */
+}
+
+header {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 1.8em; /* Aumenta o tamanho do título */
+}
+
+.home-button {
+    background-color: #990000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 20px; /* Borda arredondada */
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #b71c1c;
+}
+
+nav {
+    background-color: red;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Tamanho do texto do menu */
+    font-family: 'Times New Roman', Times, serif;
+    transition: text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; /* Permite que o conteúdo expanda e empurre o footer para baixo */
+}
+
+.rewards-title {
+    font-size: 2em;
+    color: #d32f2f;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.reward-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordas arredondadas para os itens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para os itens */
+    transition: transform 0.3s;
+}
+
+.reward-item:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+}
+
+.reward-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+}
+
+footer {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: auto; /* Garante que o footer fique na parte inferior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer .social-media img {
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.2); /* Efeito de aumento ao passar o mouse */
+}
+
+.email {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+}
+
+.comprar-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.comprar-btn:hover {
+    background-color: #218838;
+}
